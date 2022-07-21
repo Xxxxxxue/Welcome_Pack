@@ -1,0 +1,14 @@
+﻿Expresión regular,Carácter especial,Denominación,Descripción
+,,,
+.,Punto,Comodín,Cualquier carácter
+A|B,Pipe,Opciones lógicas,Alternativa (o A o B)
+C(A|B),Paréntesis,Agrupaciones,Agrupación (o CA o CB)
+[0-9],Corchetes,Rango carácteres,Dígito (del 0 al 9)
+[A-Z],Corchetes,Rango carácteres,Letra mayúscula de la A a Z
+[^A-Z],^ en corchetes,Rango exclusión,No letra A a Z mayúscula
+[0-9]*,Asterisco,Cierre,Un dígito repetido 0 ó más veces (vacío incluido)
+[0-9]+,Signo más,Cierre positivo,Un dígito repetido 1 ó más veces
+[0-9]{3},Llaves,Coincidencia exacta,Cifra de 3 dígitos (dígito repetido 3 veces)
+"[0-9]{2,4}",,Coincidencia (rango),Cifra de 2 a 4 dígitos (rep. de 2 a 4 veces)
+b?,Interrogación,Carácter opcional,El carácter b puede aparecer o puede que no
+\.,Barra invertida,Escape,El carácter . literalmente (no como comodín)
